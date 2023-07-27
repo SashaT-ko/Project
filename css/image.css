@@ -1,0 +1,236 @@
+@font-face {
+    font-family: "Ogg";
+    src: local("Ogg"),
+        url("../fonts/OggLight.woff2") format("woff2"),
+        url("../fonts/OggLight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Ogg";
+    src: url("../fonts/OggMediumItalic.woff2") format("woff2"),
+        url("../fonts/OggMediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "TradeGothic LT Extended";
+    src: local("TradeGothic LT Extended");
+    src: url("../fonts/TradeGothicLTExtended.woff2") format("woff2"),
+        url("../fonts/TradeGothicLTExtended.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.text-img {
+    display: flex;
+}
+
+.text-area {
+    margin-top: 85px;
+    margin-bottom: 67px;
+    margin-left: 75px;
+    margin-right: 28px;
+}
+
+.font-h1 {
+    font-family: "Ogg", "Arial", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+}
+
+.font-h1-type1 {
+    font-family: "TradeGothic LT Extended", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    vertical-align: top;
+}
+
+.font-h1-type2 {
+    color: #71870E;
+}
+
+.font-h1-type3 {
+    font-family: "Ogg", "Arial", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.article {
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 68px;
+}
+
+.article-text {
+    font-family: "TradeGothic LT Extended", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.article-text:last-child {
+    margin-bottom: 71px;
+}
+
+.line-read-more {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 96px;
+    margin-left: 22px;
+    margin-right: 31px;
+}
+
+.read-more {
+    text-decoration: none;
+    font-family: "TradeGothic LT Extended", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #CD9A3D;
+}
+
+.pictures {
+    position: relative;
+}
+
+.img-background {
+    height: 634px;
+    width: 464px;
+    margin-right: 139px;
+    object-fit: cover;
+}
+
+.img-main {
+    height: 326px;
+    width: 260px;
+    top: 208px;
+    right: 60px;
+    object-fit: cover;
+    position: absolute;
+}
+
+.bottom-text {
+    font-family: "TradeGothic LT Extended", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #71870E;
+    display: inline-block;
+    margin-top: 75px;
+    margin-bottom: 0;
+    padding-left: 115px;
+}
+
+@media all and (max-width: 760px) {
+    .container {
+        width: calc(100% - 20px);
+    }
+
+    .text-img {
+        display: block;
+    }
+
+    .font-h1-type1,
+    .bottom-text {
+        display: none;
+    }
+
+    .font-h1 {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 44px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin: 0;
+        margin: 25px auto;
+    }
+
+    .text-area,
+    .article-text:last-child {
+        margin: 0;
+    }
+
+    .article {
+        margin: 0;
+        padding: 0;
+    }
+
+    .line {
+        margin-left: 65px;
+    }
+
+    .line-read-more {
+        margin-top: 51px;
+        margin-bottom: 26px;
+    }
+
+    .read-more {
+        text-align: right;
+        display: block;
+    }
+
+    .pictures {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        overflow-x: hidden;
+        padding-bottom: 70px;
+    }
+
+    .img-background {
+        height: 506px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .img-main {
+        height: 295px;
+        width: 217px;
+        margin: 0;
+        top: unset;
+        bottom: -70px;
+        right: -29px;
+
+        
+    }
+
+
+
+}
